@@ -546,3 +546,7 @@ a:hover:not(.active) {
   height: 50vh;
 }
 }
+/* ------------------- Project Pages ------------------- */
+.features-box{
+  display: flex;
+}
