@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Project Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="exo-2-text">
+    <div class="cloud-header unbounded-text">
+      <h1>Personal Portfolio</h1>
+      <p>A Web Portfolio Built with HTML, CSS, & JavaScript.</p>
+    </div>
+    <div id="cloud-bar" class="cloud-bar">
+      <ul>
+        <li><a class="btn active" href="#overview">Overview</a></li>
+        <li><a class="btn" href="#features">Features</a></li>
+        <li><a class="btn" href="#process">Process</a></li>
+      </ul>
+    </div>
+    <div class="preview-box">
+      <img class="preview-item" />
+      <img class="preview-item" />
+      <img class="preview-item" />
+    </div>
+    <div id="overview">
+        <h2 class="subtitle">Overview</h2>
+        <div class="portfolio" style="background-color: lavenderblush;">
+            <h3>What I Learned by Doing this Project</h3>
+                <li>HTML, CSS, & JS</li>
+                <li>Design Research Methods</li>
+                <li>Programming Project Pathway</li>
+                <li>Asset creation in Adobe Illustrator</li>
+            <h3>Where I've used it</h3>
+                <li>With my experience in HTML, CSS, & JS, I ran the Web Development workshop at the GirlsWhoCode program.</li>
+                <li>Used my developing research skills to research into other relevant tech applications, like command line, git, & react.</li>
+        </div>
+    </div>
+    <div id="features">
+      <h2 class="subtitle">Features</h2>
+    <div class="portfolio features-box">
+        <h3>Fully stylized Webpage</h3>
+        <div style="display: flex;">
+          <li>3 Unique Sections</li>
+          <li>Interactable Navigation Bar</li>
+        </div>
+        <br/>
+        <img style="width: 80%;" src="assets/proj1/function-navbar.gif"/>
+        <li>Responsive Animated Project Reel</li>
+        <div class="example-image">
+          <img src="assets/proj1/responsive-drag.gif"/>
+          <img src="assets/proj1/select-drag.gif"/>
+        </div>
+        <li>Mobile and PC support</li>
+        <div class="example-image">
+            <img src="assets/proj1/mobile-support.gif"/> 
+        </div>
+        
+    </div>
+    </div>
+    <div id="process">
+      <h2 class="subtitle">Process</h2>
+      <div class="portfolio process-box">
+        <h3>Research</h3>
+        <p>
+          Looked at different portfolios for research.
+        </p>
+      <h3>Sketching</h3>
+      <p>
+        Started by sketching out designs.
+      </p>
+      <div class="sketches">
+        <img src="assets/proj1/alt-sketch-1.png"/>
+        <img src="assets/proj1/alt-sketch.png"/>
+        <img src="assets/proj1/sketch 2.png"/>
+        <img src="assets/proj1/sketch 1.png"/>
+      </div>
+      <h3>Styling</h3>
+        <p>I started writing the HTML and CSS focusing on creating an outline based on my sketches.</p>
+        <img src="assets/proj1/outlines.PNG" style="width: 75%;"/>
+        <p>Expanding on the CSS that was used to create a the website outline.</p>
+      <h3>Interactivity</h3>
+        <p>Learned about Javascript in order to add Interactivity to the portfolio.
+          This included adding working buttons on the navigation bar, and the resizing 
+          project reel on the Home page.
+        </p>
+      <h3>Finishing the Project</h3>
+        <p>After adjusting the CSS and improving on assets I had already made, I put the project to a close.
+        </p>
+      </div>
+      
+      <br/>
+    </div>
+    <a href="index.html">BACK</a> <br/>
+    <script>
+      let header = document.getElementById("cloud-bar");
+      let btns = header.getElementsByClassName("btn");
+
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+  </body>
+</html>

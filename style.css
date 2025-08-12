@@ -181,7 +181,7 @@ h1 {
   float: right;
   height: 100%;
   min-width: 60%;
-  background-image: url(assets/navbar.png);;
+  background-image: url(assets/navbar.png);
   background-size: cover;
 }
 .header ul {
@@ -547,6 +547,83 @@ a:hover:not(.active) {
 }
 }
 /* ------------------- Project Pages ------------------- */
-.features-box{
+.cloud-header{
+  padding-left: 2.5%;
+  background-color: white;
+}
+.cloud-bar{
+
+  width: 100%;
+  background-image: url(assets/proj1/cloud-bar.png);
+  position: sticky;
+  top: 0;
+  background-size: 100% 93%;
+  background-repeat: no-repeat;
+}
+.cloud-bar ul {
+  color: black;
+  font-size: 3vmin;
   display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.cloud-bar li{
+  background-image: url(assets/proj1/cloud-button.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  width: 15%;
+  padding: 2%;
+}
+.cloud-bar li a {
+  text-decoration: none;
+  color: black;
+}
+.cloud-bar li:hover:not(.active) {
+  /*want the active or hovered to stretch a little downwards*/
+  color: violet;
+}
+.cloud-bar li a.active {
+  color: rgb(188, 16, 223);
+}
+.subtitle{
+  padding-top: 6.5vh;
+  margin: 0 1em;
+  font-size: 5em;
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal; 
+}
+.portfolio{
+    border-radius: 2vmin;
+    margin: 1% 5%;
+    padding: 2.5%;
+    font-weight: 400;
+    font-size: 1.25em;
+}
+.portfolio li{
+    padding: 1.5%;
+}
+.features-box{
+    background-color: #FFE8FF;
+}
+.example-image{
+    display: flex;
+    gap: 5%;
+}
+.example-image img{
+   height: 65vh;
+}
+.process-box{
+    background-color: #F4E8FF;
+    line-height: 1.75;
+}
+.sketches{
+  display: flex;
+  justify-content: center;
+}
+.sketches img{
+  width: 20%;
+  margin: 2.5%;
 }
