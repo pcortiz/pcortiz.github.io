@@ -181,8 +181,8 @@ h1 {
   float: right;
   height: 100%;
   min-width: 60%;
-  background-image: url(assets/navbar.png);
-  background-size: cover;
+  background-image: url(assets/navbar.png);;
+  background-size: 100% 100%;
 }
 .header ul {
   color: black;
