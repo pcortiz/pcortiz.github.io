@@ -597,7 +597,7 @@ a:hover:not(.active) {
 }
 .portfolio{
     border-radius: 2vmin;
-    margin: 1% 5%;
+    margin: 1% 9%;
     padding: 2.5%;
     font-weight: 400;
     font-size: 1.25em;
@@ -608,16 +608,35 @@ a:hover:not(.active) {
 .features-box{
     background-color: #FFE8FF;
 }
+.features-flex{
+  display: flex;
+}
+.features-flex li{
+  padding-bottom: 0;
+}
 .example-image{
+    padding: 0 5%;
     display: flex;
+    justify-content: space-around;
     gap: 5%;
 }
 .example-image img{
-   height: 65vh;
+  height: 50vh;
+}
+.example-support{
+    display: flex;
+    gap: 3%;
+    max-height: 60vh;
+}
+.example-support img{
+  min-width: 0;
 }
 .process-box{
     background-color: #F4E8FF;
     line-height: 1.75;
+}
+.process-box h3{
+  text-align: center;
 }
 .sketches{
   display: flex;
@@ -626,4 +645,26 @@ a:hover:not(.active) {
 .sketches img{
   width: 20%;
   margin: 2.5%;
+}
+.return{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vmin;
+    padding: 2.5%;
+    width: 45%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    background-color: #e1cfff;
+}
+.return a{
+  text-decoration: none;
+  color: black;
+}
+.return a:hover{
+  color: #520876;
+}
+.return a .subtitle{
+  padding: 0;
 }
