@@ -554,7 +554,7 @@ a:hover:not(.active) {
 .cloud-bar{
 
   width: 100%;
-  background-image: url(assets/proj1/cloud-bar.png);
+  background-image: url(assets/portfolio-project/cloud-bar.png);
   position: sticky;
   top: 0;
   background-size: 100% 93%;
@@ -568,7 +568,7 @@ a:hover:not(.active) {
   list-style-type: none;
 }
 .cloud-bar li{
-  background-image: url(assets/proj1/cloud-button.png);
+  background-image: url(assets/portfolio-project/cloud-button.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   text-align: center;
