@@ -546,3 +546,125 @@ a:hover:not(.active) {
   height: 50vh;
 }
 }
+/* ------------------- Project Pages ------------------- */
+.cloud-header{
+  padding-left: 2.5%;
+  background-color: white;
+}
+.cloud-bar{
+
+  width: 100%;
+  background-image: url(assets/portfolio-project/cloud-bar.png);
+  position: sticky;
+  top: 0;
+  background-size: 100% 93%;
+  background-repeat: no-repeat;
+}
+.cloud-bar ul {
+  color: black;
+  font-size: 3vmin;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.cloud-bar li{
+  background-image: url(assets/portfolio-project/cloud-button.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  width: 15%;
+  padding: 2%;
+}
+.cloud-bar li a {
+  text-decoration: none;
+  color: black;
+}
+.cloud-bar li:hover:not(.active) {
+  /*want the active or hovered to stretch a little downwards*/
+  color: violet;
+}
+.cloud-bar li a.active {
+  color: rgb(188, 16, 223);
+}
+.subtitle{
+  padding-top: 6.5vh;
+  margin: 0 1em;
+  font-size: 5em;
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal; 
+}
+.portfolio{
+    border-radius: 2vmin;
+    margin: 1% 9%;
+    padding: 2.5%;
+    font-weight: 400;
+    font-size: 1.25em;
+}
+.portfolio li{
+    padding: 1.5%;
+}
+.features-box{
+    background-color: #FFE8FF;
+}
+.features-flex{
+  display: flex;
+}
+.features-flex li{
+  padding-bottom: 0;
+}
+.example-image{
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
+.example-image img{
+  height: 50vh;
+}
+.example-support{
+    display: flex;
+    gap: 3%;
+    max-height: 60vh;
+}
+.example-support img{
+  min-width: 0;
+}
+.process-box{
+    background-color: #F4E8FF;
+    line-height: 1.75;
+}
+.process-box h3{
+  text-align: center;
+}
+.sketches{
+  display: flex;
+  justify-content: center;
+}
+.sketches img{
+  width: 20%;
+  margin: 2.5%;
+}
+.return{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vmin;
+    padding: 2.5%;
+    width: 45%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    background-color: #e1cfff;
+}
+.return a{
+  text-decoration: none;
+  color: black;
+}
+.return a:hover{
+  color: #520876;
+}
+.return a .subtitle{
+  padding: 0;
+}
