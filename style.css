@@ -328,6 +328,9 @@ a:hover:not(.active) {
 }
 .information li {
   padding: 2%;
+  text-indent: -1.5em;
+  padding-left: 1.75em;
+  list-style-position: inside;
 }
 .info-bold{
   font-size: 2em;
@@ -477,6 +480,7 @@ a:hover:not(.active) {
 }
 .features-flex{
   display: flex;
+  flex-wrap: wrap;
 }
 .features-flex li{
   padding-bottom: 0;
@@ -703,6 +707,7 @@ a:hover:not(.active) {
   font-size: 1.15em;
 }
 .portfolio li{
+  list-style-position: inside;
   text-indent: -1.5em;
   padding-left: 1.5em;
 }
