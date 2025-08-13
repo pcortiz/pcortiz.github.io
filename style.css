@@ -7,7 +7,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-
 .exo-2-text {
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
@@ -20,21 +19,6 @@ body {
   font-weight: 200;
   font-style: normal;
 }
-.rowdies-regular {
-  font-family: "Rowdies", sans-serif;
-  font-weight: 400;
-  font-size: 2em;
-  font-style: normal;
-  text-align: center;
-}
-.verdana-bold{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.25em;
-  font-weight: bold;
-  letter-spacing: -2px;
-  text-align: center;
-}
-
 h1 {
   font-size: 6em;
 }
@@ -428,6 +412,131 @@ a:hover:not(.active) {
   width: 90%;
   border-radius: 5%;
 }
+/* ------------------- Project Pages ------------------- */
+.cloud-header{
+  width: 97.5%;
+  padding-left: 2.5%;
+  background-color: white;
+}
+.cloud-bar{
+  margin-top: -1px;
+  width: 100%;
+  background-image: url(assets/portfolio-project/cloud-bar.png);
+  position: sticky;
+  top: 0;
+  background-size: 100% 93%;
+  background-repeat: no-repeat;
+}
+.cloud-bar ul {
+  color: black;
+  font-size: 3vmin;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.cloud-bar li{
+  background-image: url(assets/portfolio-project/cloud-button.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  width: 15%;
+  padding: 2%;
+}
+.cloud-bar li a {
+  text-decoration: none;
+  color: black;
+}
+.cloud-bar li:hover:not(.active) {
+  /*want the active or hovered to stretch a little downwards*/
+  color: violet;
+}
+.cloud-bar li a.active {
+  color: rgb(188, 16, 223);
+}
+.subtitle{
+  padding-top: 6.5vh;
+  margin: 0 2em;
+  font-size: 5em;
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal; 
+}
+.portfolio{
+    border-radius: 2vmin;
+    margin: 1% 9%;
+    padding: 2.5%;
+    font-weight: 400;
+    font-size: 1.25em;
+}
+.portfolio li{
+    padding: 1.5%;
+}
+.features-box{
+    background-color: #FFE8FF;
+}
+.features-flex{
+  display: flex;
+}
+.features-flex li{
+  padding-bottom: 0;
+}
+.example-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5%;
+}
+.example-image img{
+  height: 50vh;
+}
+.example-support{
+    display: flex;
+    gap: 3%;
+    max-height: 60vh;
+}
+.example-support img{
+  min-width: 0;
+  max-height: 50vh;
+  width: auto;
+}
+.process-box{
+    background-color: #F4E8FF;
+    line-height: 1.75;
+}
+.process-box h3{
+  text-align: center;
+}
+.sketches{
+  display: flex;
+  justify-content: center;
+}
+.sketches img{
+  width: 20%;
+  margin: 2.5%;
+}
+.return{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vmin;
+    padding: 2.5%;
+    width: 45%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    background-color: #e1cfff;
+}
+.return a{
+  text-decoration: none;
+  color: black;
+}
+.return a:hover{
+  color: #520876;
+}
+.return a .subtitle{
+  padding: 0;
+}
 /* -------------------- Mobile Versions -------------------- */
 @media (max-width: 800px) {
   h1 {
@@ -545,126 +654,61 @@ a:hover:not(.active) {
   width: 100%;
   height: 50vh;
 }
+/* ------------------- Mobile Project Pages ------------------- */
+.subtitle{
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
 }
-/* ------------------- Project Pages ------------------- */
-.cloud-header{
-  padding-left: 2.5%;
-  background-color: white;
+.cloud-header h1{
+  font-size: 14vmin;
+}
+.cloud-header p{
+  font-size: 4vmin;
 }
 .cloud-bar{
-
-  width: 100%;
-  background-image: url(assets/portfolio-project/cloud-bar.png);
-  position: sticky;
-  top: 0;
-  background-size: 100% 93%;
-  background-repeat: no-repeat;
-}
-.cloud-bar ul {
-  color: black;
-  font-size: 3vmin;
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
+  background-size: 100% 85%;
 }
 .cloud-bar li{
-  background-image: url(assets/portfolio-project/cloud-button.png);
-  background-repeat: no-repeat;
+  overflow: visible;
   background-size: 100% 100%;
   text-align: center;
-  width: 15%;
+  font-size: 4vmin;
+  width: 30%;
   padding: 2%;
 }
-.cloud-bar li a {
-  text-decoration: none;
-  color: black;
-}
-.cloud-bar li:hover:not(.active) {
-  /*want the active or hovered to stretch a little downwards*/
-  color: violet;
-}
-.cloud-bar li a.active {
-  color: rgb(188, 16, 223);
-}
-.subtitle{
-  padding-top: 6.5vh;
-  margin: 0 1em;
-  font-size: 5em;
-  font-family: "Unbounded", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal; 
-}
-.portfolio{
-    border-radius: 2vmin;
-    margin: 1% 9%;
-    padding: 2.5%;
-    font-weight: 400;
-    font-size: 1.25em;
-}
-.portfolio li{
-    padding: 1.5%;
-}
-.features-box{
-    background-color: #FFE8FF;
-}
-.features-flex{
-  display: flex;
-}
-.features-flex li{
-  padding-bottom: 0;
-}
 .example-image{
-    padding: 0 5%;
-    display: flex;
-    justify-content: space-around;
-    gap: 5%;
+  flex-direction: column;
+  align-items: center;
 }
 .example-image img{
-  height: 50vh;
+  max-width: 55%;
+  height: auto;
+  padding-top: 5%;
 }
 .example-support{
-    display: flex;
-    gap: 3%;
-    max-height: 60vh;
+  max-height: fit-content;
+  flex-direction: column;
+  align-items: center;
 }
 .example-support img{
-  min-width: 0;
+  padding-top: 5%;
+  width: auto;
+  max-width: 100%;
+}
+.return a h2{
+  font-size: 2em;
+}
+.portfolio{
+  font-size: 1.15em;
+}
+.portfolio li{
+  text-indent: -1.5em;
+  padding-left: 1.5em;
 }
 .process-box{
-    background-color: #F4E8FF;
-    line-height: 1.75;
+  font-size: 0.9em;
 }
-.process-box h3{
-  text-align: center;
-}
-.sketches{
-  display: flex;
-  justify-content: center;
-}
-.sketches img{
-  width: 20%;
-  margin: 2.5%;
-}
-.return{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2vmin;
-    padding: 2.5%;
-    width: 45%;
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 6%;
-    background-color: #e1cfff;
-}
-.return a{
-  text-decoration: none;
-  color: black;
-}
-.return a:hover{
-  color: #520876;
-}
-.return a .subtitle{
-  padding: 0;
+
+
 }
