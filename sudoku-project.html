@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Project Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="exo-2-text">
+    <div class="cloud-header unbounded-text">
+      <h1>Sudoku</h1>
+      <p>A functional React interpretation of Sudoku.</p>
+    </div>
+    <div id="cloud-bar" class="cloud-bar">
+      <ul>
+        <li><a class="btn active" href="#overview">Overview</a></li>
+        <li><a class="btn" href="#features">Features</a></li>
+        <li><a class="btn" href="#process">Process</a></li>
+      </ul>
+    </div>
+    <div class="preview-box">
+      <img class="preview-item" />
+      <img class="preview-item" />
+      <img class="preview-item" />
+    </div>
+    <div id="overview">
+        <h2 class="subtitle">Overview</h2>
+        <div class="portfolio" style="background-color: lavenderblush;">
+            <h3>What I Learned by Doing this Project</h3>
+                <li>ReactJS</li>
+                <li>Javascript</li>
+                <li>Functional Programming Design</li>
+        </div>
+    </div>
+    <div id="features">
+      <h2 class="subtitle">Features</h2>
+    <div class="portfolio features-box">
+      <div class="sudoku">
+        <div>
+          <h3>Fully Functional Puzzle</h3>
+            <li>
+              Detects when a number has been fully revealed</li>
+            <li>Interactable NumberPad with select visuals</li>
+            <li>Visualizes Wrong Answers</li>
+            <li>Win Message upon Completion</li>
+        </div>
+         <img src="assets/sudoku-project/features.gif">
+      </div>
+        
+       
+    </div>
+    </div>
+    <div id="process">
+      <h2 class="subtitle">Process</h2>
+      <div class="portfolio process-box">
+        <h3>Learning React</h3>
+        <p> &emsp;&emsp;While doing research for my portfolio project, I noticed that ReactJS was among the most commonly listed skills. After enjoying the process of creating my portfolio, I was motivated to keep learning about web development. This led me to looking into ReactJS. I started simple, just reading the React beginners documentation. I followed along closely with their tic tac toe starter project. I was enthralled by the similarities between React and the work I had done with HTML, CSS, & JS. After finishing the beginner project, I took a break from React to focus on improving my portfolio. 
+        </p>
+      
+        <h3>Adapting Knowledge</h3>
+          <p></p>
+          <div style="display: flex; flex-direction: column; width: 75%; margin: auto">
+            <img src="assets/sudoku-project/sharing.png"/>
+            <img src="assets/sudoku-project/unshared.png"/>
+            <img src="assets/sudoku-project/styling.png"/>
+          </div>
+          
+      <!--
+      <h3>Initial Implementation</h3>
+        <p>
+
+        </p>
+      <h3>Code Refactoring</h3>
+        <p>
+
+        </p>
+      <h3>Finishing the Project</h3>
+        <p>
+
+        </p>
+      </div>
+      -->
+      <br/>
+    </div>
+    
+    <div class="return">  
+        <a href="index.html"><h2 class="subtitle">RETURN</h2></a> <br/> 
+    </div>
+    
+    <script>
+      let header = document.getElementById("cloud-bar");
+      let btns = header.getElementsByClassName("btn");
+
+      for (let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+  </body>
+</html>
