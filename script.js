@@ -2,7 +2,7 @@ function reelSize(){
   /* Current Implementation is Only Designed for One Project Showcase */
   const reel = document.getElementById("reel");
   const projbox = document.getElementById("projbox");
-  let mount = Math.ceil(reel.clientHeight / projbox.offsetWidth);
+  let mount = Math.ceil((reel.clientHeight / projbox.offsetWidth)/2);
   if (mount > 0){
   let newgroup = document.createElement("div");
   newgroup.className = "projgroup";
