@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -13,10 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
+
+  <!-- reelSize() allows for the project reel to be continuous regardless of size -->
   <body onresize="reelSize()" onload="reelSize()">
+    <!-- Background star animations -->
     <div class="stars">
       <div class="star1">
         <img
@@ -74,10 +79,13 @@
 
     <div id="home">
       <div class="space side"></div>
+
       <div class="hook unbounded-text">
         <h1>Making<br />Things<br />Happen</h1>
       </div>
+
       <div class="space mid"></div>
+
       <div class="reelbox">
         <div class="cloud-box"></div>
         <div id="reel" class="reel">
@@ -89,6 +97,7 @@
                       src="assets/portfolio-project/portfoliothumbnail.jpg"
                     /></div
                 ></a>
+
                 <a href="sudoku-project.html"
                   ><div class="projbox">
                     <img
@@ -96,12 +105,14 @@
                     /></div
                 ></a>
             </div>
-            
           </div>
         </div>
       </div>
+
       <div style="flex-basis: 12%" class="space side"></div>
+
     </div>
+
     <div id="about">
       <div class="name unbounded-text">
         <div class="f">
@@ -114,11 +125,16 @@
             <h1>Ortiz</h1>
         </div>
       </div>
+      
+      <!-- Grid box parent-->
       <div class="information exo-2-text">
+        <!-- Grid box children -->
+
         <div style="background-color: #cface1" class="exp info-bold">
           <h2>Experience</h2>
-        </div>
+        </div>       
         <div class="exp con">
+          <!-- h2: job title, h4: time, li: ADR Bullet Points-->
           <h2>
             University Facilities Management <br />
             IT Student Support
@@ -127,8 +143,9 @@
           <li>Work with iPhone set up and deployment.</li>
           <li>Troubleshoot common PC and Phone Issues.</li>
           <li>Prepare conference rooms for zoom.</li>
+
           <h2>
-            Girls Who Code Head Faciliator<br /></h2>
+            Girls Who Code Lead Faciliator<br /></h2>
             <h4>September 2025 - Present</h4>
           <li>
             Lead a team of facilitators to teach children grades 5th through
@@ -141,9 +158,9 @@
             Adapt to challenges and encourage relevant skill development in
             students and facilitators
           </li>
+
           <h2>Girls Who Code Faciliator</h2>
           <h4>February 2025 - April 2025</h4>
-
           <li>
             Work with a team of facilitators to teach girls grades 5th through
             12th the foundations of programming
@@ -157,10 +174,12 @@
             on one, and group support.
           </li>
         </div>
+
         <div style="background-color: #cface1" class="edu info-bold">
           <h2>Education</h2>
         </div>
         <div class="edu con">
+
           <div class="school">
             <b>BS Computer Science | Expected 2028</b><br />
             <img
@@ -169,6 +188,7 @@
             | Minor in Mathematics | 3.89 GPA <br />
             University of Arizona, Tucson, AZ<br />
           </div>
+
           <div class="school">
             <b>High School Diploma | May 2024</b><br />
             <img
@@ -178,29 +198,38 @@
             Riverside, CA<br />
           </div>
         </div>
+
         <div style="background-color: #cface1" class="skl info-bold">
           <h2>Skills</h2>
         </div>
         <div class="skl con1">
           <h4>Proficient in:</h4>
-          <li>CSS</li>
-          <li>HTML</li>
-          <li>Python</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Python</li>
+            <li>Java</li>
+          
           <h4>Experience in:</h4>
-
-          <li>Java</li>
-          <li>ReactJS</li>
-          <li>Javascript</li>
+            <li>Javascript</li> 
+            <li>ReactJS</li>
+            <li>NodeJS</li>
+            <li>Django</li>
+            <li>PostgreSQL</li>
+          
         </div>
+
         <div class="skl con2">
           <h4>Professional Experience in:</h4>
           <li>Customer Service</li>
+          <li>Communication</li>
+          <li>Leadership</li>
           <li>Teamwork</li>
-          <li>Punctuality</li> 
           <li>Organization</li>   
+          <li>Resilience</li> 
         </div>
       </div>
     </div>
+
     <div id="projects">
       <h1 style="font-weight: 500" class="unbounded-text">PROJECTS</h1>
       <div class="projects flex-con exo-2-text">
@@ -214,6 +243,7 @@
             <p>Expanded look at the process of creating this website</p>
           </div>
         </a>
+
         <a href="sudoku-project.html" class="projects flex-item">
           <div>
             <img 
@@ -223,6 +253,7 @@
             <p>Sudoku created in ReactJS using codesandbox.io</p>
           </div>
         </a>
+
       </div>
     </div>
     <script src="script.js"></script>
